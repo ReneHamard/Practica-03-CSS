@@ -1,0 +1,728 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.triangulo_inf {
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin-left: 3rem;
+    margin-top: 7rem;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-top: 60px solid rgb(238, 234, 234);
+}
+
+.triangulo_inf2 {
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    transform: rotate(90deg);
+    margin-left: 32.8rem;
+    margin-top: 30rem;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 100px solid rgb(238, 234, 234);
+}
+
+.heroBrand {
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 4rem;
+    color:#1f3e72;
+    padding: 0 2rem;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #707e96;
+    padding: 0 2rem;;
+}
+
+.bg-gradient {
+    background: rgb(10, 151, 230);
+    background: linear-gradient(90deg, rgba(10, 151, 230, 1) 0%, rgba(41, 114, 222, 1) 70%, rgba(41, 114, 222, 1) 100%);
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.brandNav {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brandLogo {
+    margin-left: 2rem;
+}
+
+.brandMenu {
+    display: none;
+    margin-right: 2rem;
+    cursor: pointer;
+    
+}
+
+.nav-menu-icon {
+    font-size: 2rem;
+    color: #1f3e72;
+}
+
+.logo {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    color: #2c4cca;
+}
+
+.brandLinks {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #707e96;
+    margin-right: 5rem;
+}
+
+.brandLink {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+/*Hero color de las letras al pasar el cursor*/
+.brandLink:hover {
+    color: rgb(56, 165, 13);
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #ffffff !important;
+    background: rgb(56, 88, 214);
+    background: linear-gradient(90deg, rgba(56, 88, 214, 1) 0%, rgba(45, 77, 203, 1) 70%, rgba(42, 74, 200, 1) 100%);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px #748198;
+}
+
+.btn:hover {
+    background: #1f3e72;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.heroContent {
+    margin: 0 auto;
+    max-width: 550px;
+    padding-top: 150px;
+}
+
+.hero-img {
+    text-align: center;
+    width: 50%;
+}
+
+.hero-img img {
+    width: 80%;
+    height: auto;
+    text-align: center;
+    margin-bottom: -5px;
+}
+
+.hero-text {
+    line-height: 35px;
+    margin-bottom: 3rem;
+}
+
+.heroBtns {
+    display: flex;
+    padding: 3rem;
+    margin-bottom: 5rem;
+}
+
+.heroBtn {
+    margin: 0 1rem 0 0;
+    font-family: 'Poppins', sans-serif;
+    color: #1f3e72;
+    font-weight: 500;
+}
+
+.heroBtn i {
+    border-radius: 5px;
+    padding: .5rem;
+}
+
+.yellow {
+    background-color: #fffcef;
+    color: #ffd428;
+}
+
+.blue {
+    background-color: #e9f1fe;
+    color: #2c4cca;
+}
+
+.heroCard {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+    padding: 1rem;
+    border-radius: 5px;
+    border: 5px solid #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+    z-index: 0;
+}
+
+.heroCardItem {
+    padding: 0 2rem;
+}
+
+.heroCard .btn {
+    padding: 1rem 3rem;
+}
+
+.heroCardText {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+
+.heroCardText .blue {
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.heroCardTitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #1f3e72;
+    margin: 0;
+    padding: 0;
+}
+
+.heroCardPadding {
+    padding: 1rem 3rem;
+}
+
+.heroCard-l-p {
+    padding-right:15rem;
+}
+
+.big {
+    padding: 1rem;
+}
+
+.logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 25%);
+    align-items: center;
+    padding: 4rem 0 1rem 0;
+    justify-content: center;
+}
+
+.logos img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    filter: contrast(0) brightness(190%);
+}
+
+.text1 h2,
+.text2 h2,
+.text3 h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    color: #1f3e72;
+    margin: 3rem 0;
+}
+
+.text1 p {
+    line-height: 35px;
+    max-width: 600px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 2rem auto;
+}
+
+.card,
+.c-cards-item {
+    margin: 2rem;
+    padding: 2rem;
+    padding-bottom: 4rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: .1s ease-in-out;
+    cursor: default;
+}
+
+.card:hover {
+    box-shadow: 0 10px 25px rgba(149, 184, 255, 0.3);
+}
+
+.card:hover .card-icon {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    font-size: 1.5rem;
+    color: #2c4cca;
+    padding: 1rem;
+    background-color: #e9f1fe;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 30px;
+    color: #1f3e72;
+    padding: 0;
+}
+
+.card-text {
+    padding: 0;
+    font-size: 1rem;
+}
+
+.text-end {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text2 p {
+    line-height: 35px;
+    max-width: 620px;
+}
+
+.faq {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.faqContainer {
+    margin: 0 auto;
+}
+
+.faqImage img {
+    width: 70%;
+}
+
+.faqImage {
+    text-align: center;
+    align-items: flex-end;
+    margin-top: 10rem;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 0;
+    height: 76%;
+}
+
+.faqItem {
+    max-width: 500px;
+    margin: 2rem 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09);
+}
+
+.faqContent {
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+    height: 0;
+}
+
+.active .faqContent {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+}
+
+.active {
+    box-shadow: 0 10px 25px rgba(149, 184, 255, 0.3);
+}
+
+.active .faqButton .faqOpen {
+    transform: rotate(180deg);
+}
+
+.active .faqButton i {
+    box-shadow: 0 10px 25px rgba(149, 184, 255, 0.3);
+}
+
+.faqContent p {
+    font-size: .9rem;
+    font-weight: 500;
+    line-height: 25px;
+    padding: 1rem 4rem;
+    padding-bottom: 2rem;
+}
+
+.faqButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.faqTitle {
+    display: flex;
+    align-items: center;
+}
+
+.faqTitle h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #1f3e72;
+    margin: 0;
+}
+
+.faqTitle i,
+.faqOpen,
+.c-cards-icon {
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: .5rem;
+    margin: 1rem;
+    background-color: #e9f1fe;
+    color: #2c4cca;
+}
+
+.faqOpen {
+    padding: .3rem .4rem;
+}
+
+.text3 p {
+    line-height: 35px;
+    max-width: 630px;
+    margin-bottom: 3rem;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100%);
+    margin-bottom: 4rem;
+}
+
+.contact-image img {
+    width: 70%;
+    overflow: visible;
+}
+
+.contact-image {
+    width: 100%;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.square-2 {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 0;
+    height: 76%;
+}
+
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.c-cards-item {
+    margin: 1rem;
+    padding-bottom: 3rem;
+    border-radius: 10px;
+}
+
+.c-cards-item:hover {
+    box-shadow: 0 10px 25px rgba(149, 184, 255, 0.3);
+}
+
+.c-cards-content {
+    display: flex;
+    align-items: center;
+}
+
+.c-cards-icon {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.c-cards-text h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #1f3e72;
+    margin-bottom: 0;
+}
+
+.c-cards-text p {
+    font-size: .9rem;
+    margin-top: 0;
+    color: #707e96;
+}
+
+.btn-white {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    margin: 0 1rem;
+    margin-top: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #2c4cca;
+    background-color: #e9f1fe;
+    border: none;
+    border-radius: 5px;
+    transition: .1s ease-in-out;
+}
+
+.btn-white:hover {
+    color: white;
+    background: rgb(56, 88, 214);
+    box-shadow: 0 2px 10px #748198;
+}
+
+.footer {
+    background-color: #e9f1fe;
+    padding: 3rem 0 2rem 0;
+    text-align: center;
+}
+
+.footer1,
+.footer2 {
+    display: grid;
+}
+
+.footer2 {
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.footerLogo {
+    width: 100%;
+}
+
+.footerListLinks {
+    display: grid;
+}
+
+.footer-list {
+    display: grid;
+}
+
+.link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #748198;
+    line-height: 30px;
+    margin: 1rem;
+}
+
+.link:hover {
+    color: #1f3e72;
+}
+
+.footerLogo p,
+.footer2 p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #748198;
+    line-height: 30px;
+}
+
+.link-strong {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 1.6rem;
+    color: #1f3e72;
+    line-height: 30px;
+    margin: 1rem;
+}
+
+.link-strong:hover {
+    color: #748198;
+}
+
+/*@media asocia un grupo de declaraciones anidadas, en un bloque CSS delimitado por llaves*/
+@media screen and (max-width: 524px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 680px) {
+    .contact-image {
+        margin-top: 15rem;
+    }
+    .faq-image {
+        margin-top: 10rem;
+    }
+}
+
+@media screen and (max-width: 961px) {
+    .brandLinks {
+        display: none;
+        background: rgba(255, 255, 255, 0.9);
+    }
+
+    .btn-blue {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .brandMenu {
+        display: block;
+    }
+
+    .nav-links-active {
+        position: fixed;
+        display: grid;
+        top: 150px;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 3rem;
+        gap: 2rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 961px) {
+    .footer {
+        text-align: start;
+    }
+
+    .footer1,
+    .footer2 {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .footer2 {
+        align-items: center;
+        margin-top: 2rem;
+    }
+    
+    .footerLogo {
+        max-width: 250px;
+    }
+
+    .footerLogo p, .footer2 p {
+        padding: 0;
+    }
+    
+    .footerListLinks {
+        display: flex;
+    }
+    
+    .footer-list {
+        display: grid;
+        margin-left: 4rem;
+    }
+}
+
+@media screen and (max-width: 1099px) {
+    .heroContent {
+        padding-top: 7rem;
+    }
+
+    .hero-card-item {
+        padding: .5rem;
+        text-align: center;
+    }
+
+    .hero-img {
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .faqImage {
+        width: 100%;
+        margin-top: 15rem;
+    }
+}
+
+@media screen and (min-width: 1099px) {
+    .contact {
+        grid-template-columns: repeat(auto-fill, 50%);
+    }
+
+    .contact-cards {
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .contact-image {
+        margin-top: 12rem;
+        
+    }
+
+    .square-2 {
+        width: 80%;
+        margin-left: auto;
+    }
+
+    .c-cards-item-end {
+        align-self: flex-end;
+    }
+
+    .c-cards-item-start {
+        align-self: flex-start;
+    }
+
+    .text3 p {
+        margin-bottom: 0;
+    }
+    .text-end {
+        justify-content: end;
+    }
+}
